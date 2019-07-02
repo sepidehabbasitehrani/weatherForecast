@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(path= "/weather",
         produces="application/json")
 @CrossOrigin(origins="*")
+@EnableSwagger2
 
 public class WeatherController {
     private final WeatherRepository weatherRepository;
